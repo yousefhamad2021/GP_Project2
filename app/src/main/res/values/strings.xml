@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Food App</string>
+
+    <string name="preferences_file_name">food_runner_preferences</string>
+    <string name="mobile_number_hint">Mobile Number(10 digits)</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="register_hint"><u>Don\'t have an account?\nSign up now</u></string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="register_button_text">Register</string>
+    <string name="home_menu_title">Home</string>
+    <string name="profile_menu_title">My Profile</string>
+    <string name="favourites_menu_title">Favorite Restaurants</string>
+    <string name="faq_menu_title">FAQs</string>
+    <string name="log_out_menu_title">Log out</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string name="restaurant_image_content_desc">Restaurant Image</string>
+    <string name="favourite_button_content_desc">Add to favourites</string>
+    <string name="no_favourites">No favourites</string>
+
+    <string name="mobile_number_template">+91-%s</string>
+    <string name="total">Total:</string>
+    <string name="no_orders_made">You haven\'t ordered anything yet. Order some delicious foods.</string>
+    <string name="previous_order_header">Your previous orders:</string>
+    <string name="order_history_menu_title">Order History</string>
+    <string name="btn_text_add">Add</string>
+    <string name="btn_text_remove">Remove</string>
+    <string name="restaurant_details_header">Choose from the menu listed below:</string>
+    <string name="error_string">Some unexpected error occurred. Try again later.</string>
+    <string name="go_to_cart">Go to Cart</string>
+    <string name="place_order_btn">Place Order</string>
+    <string name="ordering_from_template">Ordering from: %s</string>
+    <string name="total_cost_template">Total:\n%d</string>
+    <string name="order_placed_successfully">Order Placed successfully.</string>
+    <string name="go_to_dashboard">Go to Dashboard</string>
+    <string name="empty_cart_string">Your Cart is empty. Add some delicious foods here.</string>
+    <string name="unexpected_error">Some unexpected error occurred. Retry later.</string>
+    <string name="login_header_text">Login</string>
+    <string name="register_header_text">Register</string>
+    <string name="sort_action_title">Sort</string>
+    <string name="error">Error</string>
+    <string name="profile_pic_content_description">Profile Picture</string>
+
+</resources>
