@@ -4,20 +4,14 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.Fragment
 import com.budiyev.android.codescanner.CodeScanner
-import com.budiyev.android.codescanner.CodeScannerView
 import com.budiyev.android.codescanner.DecodeCallback
 import com.graduate.project.R
-import com.graduate.project.activity.DashboardActivity
 import com.graduate.project.activity.RestaurantDetailActivity
-import com.graduate.project.util.loadSharedPreferences
-import com.graduate.project.util.userIdKey
 import kotlinx.android.synthetic.main.scan_page.*
 
 import java.util.*
@@ -57,11 +51,6 @@ class ScanFragment :   AppCompatActivity()  {
     }
 
 
-    //BK59
-
-
-
-
     private fun allPermissionsGranted(): Boolean {
         for (permission in REQUIRED_PERMISSIONS) {
             if (ContextCompat.checkSelfPermission(
@@ -80,11 +69,13 @@ class ScanFragment :   AppCompatActivity()  {
         codeScanner = scanner_view?.let { CodeScanner(this, it) }!!
         codeScanner.decodeCallback = DecodeCallback {
             this.runOnUiThread {
-                val textQr = it.text.split("BookingId=")
-                //ticket.setText("BK${textQr.last()}")
-                //   Toast.makeText(activity, it.text, Toast.LENGTH_LONG).show()
-                val intent = Intent(this, RestaurantDetailActivity::class.java)
-                startActivity(intent)
+                val textQr = it.text
+                if (textQr == "Hello :)") {
+                    val intent = Intent(this, RestaurantDetailActivity::class.java)
+                    startActivity(intent)
+                }else{
+                    Toast.makeText(this,"Not Found",Toast.LENGTH_SHORT).show()
+                }
 
             }
         }
@@ -121,3 +112,5 @@ class ScanFragment :   AppCompatActivity()  {
 
 
 }
+
+

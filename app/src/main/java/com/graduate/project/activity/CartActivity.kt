@@ -26,7 +26,7 @@ import com.graduate.project.database.RetrieveCartAsyncTask
 import com.graduate.project.model.RestaurantFoodItem
 import com.graduate.project.network.ConnectionManager
 import com.graduate.project.network.noInternetDialog
-import com.graduate.project.util.*
+import com.graduate.project.helper.*
 import org.json.JSONArray
 import org.json.JSONObject
 

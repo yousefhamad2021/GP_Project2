@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.graduate.project.R
 import com.graduate.project.model.RestaurantFoodItemUIModel
-import com.graduate.project.util.hide
-import com.graduate.project.util.show
+import com.graduate.project.helper.hide
+import com.graduate.project.helper.show
 
 class RestaurantDetailAdapter(
     private var foodItemList: ArrayList<RestaurantFoodItemUIModel>,

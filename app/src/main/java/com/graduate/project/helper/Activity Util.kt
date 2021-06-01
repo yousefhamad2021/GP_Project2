@@ -1,4 +1,4 @@
-package com.graduate.project.util
+package com.graduate.project.helper
 
 import android.app.Activity
 import android.content.Context

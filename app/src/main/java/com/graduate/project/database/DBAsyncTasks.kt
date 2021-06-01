@@ -5,8 +5,8 @@ import android.os.AsyncTask
 import androidx.room.Room
 import com.graduate.project.database.entity.CartElementEntity
 import com.graduate.project.database.entity.RestaurantEntity
-import com.graduate.project.util.CartDBTasks
-import com.graduate.project.util.FavouriteRestaurantsDBTasks
+import com.graduate.project.helper.CartDBTasks
+import com.graduate.project.helper.FavouriteRestaurantsDBTasks
 
 class FavouriteDBAsyncTask(
     context: Context,

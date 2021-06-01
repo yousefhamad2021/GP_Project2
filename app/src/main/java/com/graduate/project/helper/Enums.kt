@@ -1,4 +1,4 @@
-package com.graduate.project.util
+package com.graduate.project.helper
 
 enum class InputState {
     INVALID_MOBILE, INVALID_PASSWORD, OKAY, INVALID_EMAIL, INVALID_NAME, INVALID_ADDRESS, PSW_NO_MATCH, INVALID_OTP

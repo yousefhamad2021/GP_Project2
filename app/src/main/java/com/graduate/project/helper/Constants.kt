@@ -1,4 +1,4 @@
-package com.graduate.project.util
+package com.graduate.project.helper
 
 const val isLoggedInKey = "isLoggedIn"
 const val userIdKey=  "userId"

@@ -12,6 +12,11 @@
             android:icon="@drawable/ic_person"
             android:title="@string/profile_menu_title" />
 
+        <item
+            android:id="@+id/scan"
+            android:icon="@drawable/ic_code_scanner_auto_focus_off"
+            android:title="Scan" />
+
 
 
 

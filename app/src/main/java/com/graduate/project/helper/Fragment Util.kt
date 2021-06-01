@@ -1,4 +1,4 @@
-package com.graduate.project.util
+package com.graduate.project.helper
 
 import android.content.Context
 import android.content.SharedPreferences

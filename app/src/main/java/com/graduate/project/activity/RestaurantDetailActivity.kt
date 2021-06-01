@@ -23,7 +23,7 @@ import com.graduate.project.model.*
 import com.graduate.project.network.ConnectionManager
 import com.graduate.project.network.NetworkTask
 import com.graduate.project.network.noInternetDialog
-import com.graduate.project.util.*
+import com.graduate.project.helper.*
 import kotlinx.android.synthetic.main.activity_restaurant_detail.*
 import org.json.JSONObject
 

@@ -11,8 +11,6 @@
     <string name="register_button_text">Register</string>
     <string name="home_menu_title">Home</string>
     <string name="profile_menu_title">My Profile</string>
-    <string name="favourites_menu_title">Favorite Restaurants</string>
-    <string name="faq_menu_title">FAQs</string>
     <string name="log_out_menu_title">Log out</string>
     <string name="open_drawer">Open Drawer</string>
     <string name="close_drawer">Close Drawer</string>
@@ -22,10 +20,6 @@
     <string name="no_favourites">No favourites</string>
 
     <string name="mobile_number_template">+91-%s</string>
-    <string name="total">Total:</string>
-    <string name="no_orders_made">You haven\'t ordered anything yet. Order some delicious foods.</string>
-    <string name="previous_order_header">Your previous orders:</string>
-    <string name="order_history_menu_title">Order History</string>
     <string name="btn_text_add">Add</string>
     <string name="btn_text_remove">Remove</string>
     <string name="restaurant_details_header">Choose from the menu listed below:</string>

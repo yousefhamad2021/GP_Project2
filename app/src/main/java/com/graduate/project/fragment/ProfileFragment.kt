@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.graduate.project.R
-import com.graduate.project.util.*
+import com.graduate.project.helper.*
 
 class ProfileFragment : Fragment() {
 

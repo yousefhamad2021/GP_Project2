@@ -15,7 +15,8 @@ import com.graduate.project.*
 import com.graduate.project.network.ConnectionManager
 import com.graduate.project.network.NetworkTask
 import com.graduate.project.network.noInternetDialog
-import com.graduate.project.util.*
+import com.graduate.project.helper.*
+import kotlinx.android.synthetic.main.content_profile.*
 import org.json.JSONObject
 
 class RegistrationActivity : AppCompatActivity() {
@@ -52,7 +53,18 @@ class RegistrationActivity : AppCompatActivity() {
         btnRegister = findViewById(R.id.btnRegister)
 
         btnRegister.setOnClickListener {
-            tryRegister()
+
+            val userId = "1"
+            val userName = etName.text.toString()
+            val userEmail = etEmail.text.toString()
+            val userMobileNumber = etMobileNumber.text.toString()
+            val userAddress = ""
+            saveToPreferences(
+                userId, userName, userEmail, userMobileNumber, userAddress
+            )
+            // Since, we are navigating from RegistrationActivity and stopping the activity(finish())
+            // after navigation, we do not need to enable the disabled Register button.
+            navigateToDashboardActivity()
         }
 
     }

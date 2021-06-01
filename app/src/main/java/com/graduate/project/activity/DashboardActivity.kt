@@ -18,7 +18,10 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.navigation.NavigationView
 import com.graduate.project.*
 import com.graduate.project.fragment.*
-import com.graduate.project.util.*
+import com.graduate.project.helper.FragmentDestinations
+import com.graduate.project.helper.loadSharedPreferences
+import com.graduate.project.helper.userMobileKey
+import com.graduate.project.helper.userNameKey
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -91,7 +94,10 @@ class DashboardActivity : AppCompatActivity() {
                     navigateFromDashboardActivity(FragmentDestinations.MY_PROFILE)
                 }
 
-
+                R.id.scan -> {
+                    val intent = Intent(this@DashboardActivity, ScanFragment::class.java)
+                    startActivity(intent)
+                }
 
 
 
@@ -152,7 +158,7 @@ class DashboardActivity : AppCompatActivity() {
         val title = when (destinationFragment) {
             FragmentDestinations.HOME -> "All Restaurants"
             FragmentDestinations.MY_PROFILE -> "My Profile"
-           // FragmentDestinations.ORDER_HISTORY -> "Previous Orders"
+            // FragmentDestinations.ORDER_HISTORY -> "Previous Orders"
 
         }
         val transaction = supportFragmentManager.beginTransaction()

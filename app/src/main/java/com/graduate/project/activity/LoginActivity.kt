@@ -16,14 +16,14 @@ import com.graduate.project.fragment.ScanFragment
 import com.graduate.project.network.ConnectionManager
 import com.graduate.project.network.NetworkTask
 import com.graduate.project.network.noInternetDialog
-import com.graduate.project.util.*
+import com.graduate.project.helper.*
 import kotlinx.android.synthetic.main.content_login.*
 import org.json.JSONObject
 
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var etMobileNumber: TextInputEditText
+    private lateinit var etEmailAddress: TextInputEditText
     private lateinit var etPassword: TextInputEditText
     private lateinit var btnLogin: Button
     private lateinit var txtRegister: TextView
@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
 
         progressLayout = findViewById(R.id.progressLayout)
         progressLayout.hide()
-        etMobileNumber = findViewById(R.id.etMobileNumber)
+        etEmailAddress = findViewById(R.id.etEmailAddress)
         etPassword = findViewById(R.id.etPassword)
         btnLogin = findViewById(R.id.btnLogin)
         txtRegister = findViewById(R.id.txtRegister)
@@ -102,7 +102,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun tryLogin() {
-        val mobileNumber = etMobileNumber.text.toString()
+        val mobileNumber = etEmailAddress.text.toString()
         val password = etPassword.text.toString()
 
         when (checkValidInputs(mobileNumber, password)) {
@@ -113,7 +113,7 @@ class LoginActivity : AppCompatActivity() {
                 etPassword.error = "Invalid Password"
             }
             InputState.INVALID_MOBILE -> {
-                etMobileNumber.error = "Invalid mobile."
+                etEmailAddress.error = "Invalid Email."
             }
             else -> {
                 showToast("Unknown Input State.")

@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.core.app.ActivityCompat
 import com.graduate.project.R
-import com.graduate.project.util.isLoggedInKey
-import com.graduate.project.util.loadSharedPreferences
+import com.graduate.project.helper.isLoggedInKey
+import com.graduate.project.helper.loadSharedPreferences
 
 class SplashActivity : AppCompatActivity() {
 

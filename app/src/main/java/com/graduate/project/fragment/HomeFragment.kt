@@ -22,7 +22,7 @@ import com.graduate.project.model.RestaurantUIModel
 import com.graduate.project.model.toRestaurantEntity
 import com.graduate.project.network.ConnectionManager
 import com.graduate.project.network.noInternetDialog
-import com.graduate.project.util.*
+import com.graduate.project.helper.*
 import org.json.JSONObject
 import java.util.*
 import kotlin.Comparator
